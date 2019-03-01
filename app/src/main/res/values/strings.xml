@@ -25,4 +25,6 @@ At midnight, Nick and Jordan go outside to watch the entertainment. They sit at 
     <string name="chapter_1">Chapter 1</string>
     <string name="chapter_2">Chapter 2</string>
     <string name="chapter_3">Chapter 3</string>
+    <string name="select">SELECT</string>
+    <string name="add">Add</string>
 </resources>

@@ -32,7 +32,7 @@
             android:id="@+id/button_add"
             android:layout_width="@dimen/dp0"
             android:layout_height="match_parent"
-            android:text="Add"
+            android:text="@string/add"
             android:onClick="addItemOnClick"
             android:layout_weight="1"/>
     </LinearLayout>

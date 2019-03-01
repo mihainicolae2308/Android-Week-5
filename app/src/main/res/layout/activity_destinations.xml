@@ -9,21 +9,21 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view_destinations"
-        android:layout_width="0dp"
+        android:layout_width="@dimen/dp0"
         android:layout_height="match_parent"
         android:layout_weight="6">
     </android.support.v7.widget.RecyclerView>
 
     <Button
-        android:layout_width="0dp"
+        android:layout_width="@dimen/dp0"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_marginBottom="@dimen/dp8"
         android:layout_weight="1"
         android:background="@color/colorPrimary"
         android:text="+"
         android:textColor="@android:color/white"
-        android:textSize="40sp"
+        android:textSize="@dimen/sp40"
         android:onClick="addNewDestinationOnClick"/>
 </LinearLayout>
