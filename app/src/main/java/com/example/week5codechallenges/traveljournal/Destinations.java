@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Destinations extends AppCompatActivity {
+    public static final String TRIP_NAME = "trip name";
+    public static final String DESTINATION = "destination";
 
     private RecyclerView mRecyclerViewDestinations;
 
@@ -52,5 +54,18 @@ public class Destinations extends AppCompatActivity {
     public void addDestination(String season, String location, String imageLocation) {
         List<Destination> currentDestinationList = getDestinations();
         currentDestinationList.add(new Destination(season, location, imageLocation));
+    }
+
+    public void editDestinationOnClick(View view) {
+
+        mRecyclerViewDestinations.addOnItemTouchListener(new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent intent = new Intent(Destinations.this, ManageTrip.class);
+                intent.putExtra(TRIP_NAME, getDestinations().get(position).getSeason());
+                intent.putExtra(DESTINATION, getDestinations().get(position).getDestination());
+                startActivity(intent);
+            }
+        }));
     }
 }

@@ -1,5 +1,8 @@
 package com.example.week5codechallenges.traveljournal;
 
+import android.content.Intent;
+import android.view.View;
+
 public class Destination {
     private String mSeason;
     private String mDestination;

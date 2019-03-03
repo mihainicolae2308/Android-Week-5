@@ -18,17 +18,19 @@
 
         </activity>
         <activity android:name=".threetexts.ChooseTextActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
         <activity android:name=".todolist.ToDoListActivity">
 
         </activity>
         <activity android:name=".traveljournal.ManageTrip" />
-        <activity android:name=".traveljournal.Destinations" />
+        <activity android:name=".traveljournal.Destinations" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
